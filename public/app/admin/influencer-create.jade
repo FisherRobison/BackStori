@@ -1,0 +1,31 @@
+.container
+  .well
+    form.form-horizontal(name="InfluencerForm")
+      fieldset
+        legend Influencer Profile
+        .form-group
+          label.col-md-2.control-label(for="fname") First Name
+          .col-md-10
+            input.form-control(name="fname", type="text", placeholder="First Name", ng-model="fname", required)
+        .form-group
+          label.col-md-2.control-label(for="lname") Last Name
+          .col-md-10
+            input.form-control(name="lname", type="text", placeholder="Last Name", ng-model="lname", required)
+        .form-group
+          label.col-md-2.control-label(for="industry") Industry
+          .col-md-10
+            input.form-control(name="industry", type="text", placeholder="industry", ng-model="industry")
+        .form-group
+          label.col-md-2.control-label(for="website") Website
+          .col-md-10
+            input.form-control(name="website", type="text", placeholder="website", ng-model="website")
+        .form-group
+          label.col-md-2.control-label(for="twitter") twitter
+          .col-md-10
+            input.form-control(name="twitter", type="text", placeholder="twitter", ng-model="twitter")
+        .form-group
+          .col-md-10.col-md-offset-2
+            .pull-right
+              button.btn.btn-primary(ng-click="create()", ng-disabled="signupForm.$invalid") Submit
+              | &nbsp;
+              a.btn.btn-default(href="/") Cancel

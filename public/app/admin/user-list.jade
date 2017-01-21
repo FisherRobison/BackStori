@@ -1,0 +1,8 @@
+.container
+  table.table
+    tr(ng-repeat="user in users")
+      td {{user.firstName + ' ' + user.lastName}}
+   ul.nav.navbar-nav
+                    li
+                        a(href="/create") Create Influencer
+                   

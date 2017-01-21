@@ -1,0 +1,24 @@
+.container
+  h1 {{influencer.name}}
+  .row
+    .col-md-6
+     .panel.panel-primary
+        .panel-heading Videos
+        .panel-body
+          div(ng-repeat="tag in influencer.tags") {{tag}}
+    .col-md-6
+      .panel.panel-primary
+        .panel-heading Articles
+        .panel-body
+          div(ng-repeat="tag in influencer.tags") {{tag}}
+  .row
+    .col-md-6
+     .panel.panel-primary
+        .panel-heading Podcasts
+        .panel-body
+          div(ng-repeat="tag in influencer.tags") {{tag}}
+    .col-md-6
+      .panel.panel-primary
+        .panel-heading Tags
+        .panel-body
+          div(ng-repeat="tag in influencer.tags") {{tag}}
